@@ -1,0 +1,51 @@
+:root {
+    --background : #493F2B;
+    --accent : #F4B400;
+    --Text : #FFFFFF;
+    --image-width : 5vw;
+    --image-height : 3vh;
+    --span-text-color : whitesmoke;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+span{
+    font-style: italic;
+    color: var(--span-text-color);
+}
+
+p{
+    color: var(--Text);
+}
+
+#logo-and-blogger-section-subsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logout{
+    width: var(--image-width);
+    height: var(--image-height);
+    background-color: var(--accent);
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cardHolder{
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--background);
+    border-radius: 8px;
+}
