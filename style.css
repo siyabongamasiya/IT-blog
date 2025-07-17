@@ -6,6 +6,10 @@
     --image-height : 9vw;
     --span-text-color : whitesmoke;
     --logo-and-blogger-gap : 30px;
+
+    /* fonts*/
+    --header-font : 3rem;
+    --description-font : 1.5rem;
 }
 
 *,::after,::before{
@@ -61,6 +65,18 @@ footer{
 
 h3,h1{
     color: var(--Text);
+}
+
+#nav-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-item{
+    background-color: var(--accent);
+    padding: 16px;
+    border-radius: 8px;
 }
 
 h3{

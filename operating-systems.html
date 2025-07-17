@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparing Windows, Mac and Linux</title>
+    <link rel="stylesheet" href="./op-system-style.css">
+  </head>
+  <body>
+    <!--header-->
+    <header class="cardHolder" id="top">
+      <h1>Comparing Windows,macOS and linux</h1>
+      <p id="intro-text">
+        Operating systems (OS) are the backbone of modern computing, providing the <br />
+        interface between users and hardware. 
+        Among the most widely used desktop <br />
+        operating systems  today are Windows,
+        macOS, and Linux.Each of these systems <br />
+        offers a unique approach to performance,
+        usability, customization, and software <br /> 
+        compatibility. While Windows
+        dominates the global market and is known for its broad <br /> 
+        application
+        support,macOS is praised for its sleek design and seamless integration <br />
+        with Apple hardware. Linux, on the other hand, stands out for its
+        open-source nature,<br />
+        flexibility, and strong presence in servers and development environments. <br />
+        Understanding the differences between these operating systems can help users <br /> 
+        make informed decisions based on their needs, preferences, and technical skills.
+      </p>
+    </header>
+    <main>
+      <!--navigators-->
+      <div id="nav-container">
+      <div class="nav-item" id="nav-item-1"><a href="./index.html">1</a></div>
+      <div class="nav-item" id="nav-item-1"><a href="./operating-systems.html">2</a></div>
+    </div>
+      <!--directory structure-->
+      <h3 class="section-header">1. Directory Structure</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS / Linux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Root Directory</td>
+            <td>C:\ (and other drive letters)</td>
+            <td>/ (single root for everything)</td>
+          </tr>
+          <tr>
+            <td>System Files Location</td>
+            <td>C:\Windows\System32</td>
+            <td>/bin, /sbin, /lib, /usr</td>
+          </tr>
+          <tr>
+            <td>User Files</td>
+            <td>C:\Users\Username\</td>
+            <td>/home/username/</td>
+          </tr>
+          <tr>
+            <td>Drive Mounting</td>
+            <td>Each drive has a letter (C:, D:)</td>
+            <td>Mounted under /mnt or /Volumes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--naming convention -->
+      <h3 class="section-header">2. Naming Convention</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS / Linux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Case Sensitivity</td>
+            <td>Not case-sensitive by default</td>
+            <td>Case-sensitive (e.g., file.txt ≠ File.txt)</td>
+          </tr>
+          <tr>
+            <td>Allowed Characters</td>
+            <td>Disallows some (&lt;, &gt;, :, *)</td>
+            <td>Allows most characters except / and null</td>
+          </tr>
+          <tr>
+            <td>File Extensions</td>
+            <td>Important for file type recognition</td>
+            <td>Optional, but used for convenience</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- file systems-->
+      <h3 class="section-header">3. File Systems</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS</th>
+            <th>Linux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Default File System</td>
+            <td>NTFS</td>
+            <td>APFS (modern macOS), HFS+</td>
+            <td>ext4, xfs, btrfs, etc.</td>
+          </tr>
+          <tr>
+            <td>External Drive FS</td>
+            <td>Often exFAT, FAT32</td>
+            <td>exFAT, FAT32, APFS</td>
+            <td>ext4, exFAT, FAT32</td>
+          </tr>
+          <tr>
+            <td>Journaling Support</td>
+            <td>Yes (NTFS)</td>
+            <td>Yes (APFS)</td>
+            <td>Yes (ext4, xfs)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Executable file types-->
+      <h3 class="section-header">4. Executable File Types</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS / Linux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Binary Executables</td>
+            <td>.exe, .bat, .msi</td>
+            <td>
+              No extensions required (but often .out, .sh, or just no extension)
+            </td>
+          </tr>
+          <tr>
+            <td>Permission Needed</td>
+            <td>No (just double-click)</td>
+            <td>
+              Yes (file must be marked executable using <code>chmod +x</code>)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--script excecution-->
+      <h3 class="section-header">5. Script Execution</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS / Linux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shell Used</td>
+            <td>Command Prompt (cmd.exe) or PowerShell</td>
+            <td>bash, zsh, sh</td>
+          </tr>
+          <tr>
+            <td>Script Types</td>
+            <td>.bat, .ps1</td>
+            <td>.sh, .bash, Python (.py), etc.</td>
+          </tr>
+          <tr>
+            <td>Execution Command</td>
+            <td>script.bat or powershell script.ps1</td>
+            <td>./script.sh or bash script.sh</td>
+          </tr>
+          <tr>
+            <td>Requires Permissions?</td>
+            <td>Usually no</td>
+            <td>
+              Yes — script must have execute permission (<code>chmod +x</code>)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--navigators-->
+      <div id="nav-container">
+      <div class="nav-item" id="nav-item-1"><a href="./index.html">1</a></div>
+      <div class="nav-item" id="nav-item-1"><a href="./operating-systems.html">2</a></div>
+    </div>
+    </main>
+
+    <footer class="cardHolderFooter" id="footer">
+      <img class="blog-image" src="./media/images/logo.png" alt="logo-image" />
+      <p id="copyright">@ 2025 All rights reserved</p>
+    </footer>
+  </body>
+</html>

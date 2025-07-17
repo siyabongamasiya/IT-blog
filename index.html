@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-Blog</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="cardHolder" id="top">
-        <div id="logo-and-blogger-section">
-            <div id="logo-and-blogger-section-subsection-1">
-                <img class="blog-image" src="./media/images/logo.png" alt="logo-image">
-                <h1>Challenges faced by IT professionals in Africa</h1>
-            </div>
-            
-            <div id="logo-and-blogger-section-subsection-2">
-                <img id="blogger-image" src="./media/images/blogger.png" alt="">
-                <p>By <span>Steven Bright</span></p>
-            </div>
-            
+      <div id="logo-and-blogger-section">
+        <div id="logo-and-blogger-section-subsection-1">
+          <img
+            class="blog-image"
+            src="./media/images/logo.png"
+            alt="logo-image"
+          />
+          <h1>Challenges faced by IT professionals in Africa</h1>
         </div>
-        <button id="logout" onclick="logout()">
-            Logout
-        </button>
+
+        <div id="logo-and-blogger-section-subsection-2">
+          <img id="blogger-image" src="./media/images/blogger.png" alt="" />
+          <p>By <span>Steven Bright</span></p>
+        </div>
+      </div>
+      <button id="logout" onclick="logout()">Logout</button>
     </header>
+    <!--navigators-->
+    <div id="nav-container">
+      <div class="nav-item" id="nav-item-1"><a href="./index.html">1</a></div>
+      <div class="nav-item" id="nav-item-1"><a href="./operating-systems.html">2</a></div>
+    </div>
+
+    <!--main content-->
     <main>
-        <section class="cardHolder" id="challenges-section">
-            
-        </section>
+      <section class="cardHolder" id="challenges-section"></section>
     </main>
+
+    <!--navigators-->
+    <div id="nav-container">
+      <div class="nav-item" id="nav-item-1"><a href="./index.html">1</a></div>
+      <div class="nav-item" id="nav-item-1"><a href="./operating-systems.html">2</a></div>
+    </div>
     <footer class="cardHolder" id="footer">
-            <img class="blog-image" src="./media/images/logo.png" alt="logo-image">
-            <p id="copyright">@ 2025 All rights reserved</p>
+      <img class="blog-image" src="./media/images/logo.png" alt="logo-image" />
+      <p id="copyright">@ 2025 All rights reserved</p>
     </footer>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
