@@ -12,8 +12,11 @@
     --description-font : 1.5rem;
 }
 
-*,::after,::before{
-    box-sizing: content-box;
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .blog-image,#blogger-image{
@@ -93,7 +96,6 @@ p{
 }
 
 .challenge-content {
-    margin-top: -20px;
     font-size: 1.18rem;
 }
 
@@ -132,7 +134,7 @@ p{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-
+    margin-bottom: 20px;
 }
 
 .cardHolder{

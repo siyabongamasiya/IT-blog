@@ -1,128 +1,131 @@
 :root {
-    /*colors*/
-    --background : #493F2B;
-    --accent : #F4B400;
-    --Text : #FFFFFF;
-    --span-text-color : whitesmoke;
-    --logo-and-blogger-gap : 30px;
-    --row-color:#fff;
+  /*colors*/
+  --background: #493f2b;
+  --accent: #f4b400;
+  --Text: #ffffff;
+  --span-text-color: whitesmoke;
+  --logo-and-blogger-gap: 30px;
+  --row-color: #fff;
 
-    /* fonts*/
-    --header-font : 3rem;
-    --description-font : 1.5rem;
-    --header-font:2rem;
+  /* fonts*/
+  --header-font: 3rem;
+  --description-font: 1rem;
+  --header-description-font: 2rem;
+
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    gap: 20px;
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
 }
 
-.cardHolder{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: var(--Text);
-    width: 100% !important; 
-    padding: 16px;
-    background-color: var(--background);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #493F2B;
+.cardHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  color: var(--Text);
+  width: 100% !important;
+  padding: 16px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 0px #493f2b;
 }
 
-h1{
-    font-size: var(--header-font);
+h1 {
+  font-size: var(--header-font);
 }
 
-#intro-text{
-    font-size: var(--description-font);
+#intro-text {
+  font-size: var(--header-description-font);
+  width: 100%;
 }
 
-#nav-container{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.nav-item{
-    background-color: var(--accent);
-    padding: 16px;
-    border-radius: 8px;
+.nav-item {
+  background-color: var(--accent);
+  padding: 16px;
+  border-radius: 8px;
 }
 
-.section-header{
-    font-size: var(--header-font);
-    margin-top: 30px;
+.section-header {
+  font-size: var(--header-font);
+  margin-top: 30px;
 }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-family: sans-serif;
-    font-size: var(--description-font);
-    text-align: left;
-    background-color: var(--row-color);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  }
-
-  thead {
-    background-color: var(--accent);;
-  }
-
-  th, td {
-    padding: 12px 16px;
-    border: 1px solid #ddd;
-  }
-
-  th {
-    font-weight: 600;
-  }
-
-  tr:nth-child(even) {
-    background-color: var(--row-color);
-  }
-
-  tr:hover {
-    background-color: var(--accent);
-  }
-
-  footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
+table {
+  width: 100%;
+  margin: 20px 0;
+  font-family: sans-serif;
+  font-size: var(--description-font);
+  text-align: left;
+  background-color: var(--row-color);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-#blogger-image{
-    transition: transform 0.3s ease-in-out;
+thead {
+  background-color: var(--accent);
 }
 
-#blogger-image:hover{
-    transform: scale(1.1);
+th,
+td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
 }
 
-.cardHolderFooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    color: var(--Text);
-    width: 100% !important; 
-    padding: 16px;
-    background-color: var(--background);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #493F2B;
+th {
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: var(--row-color);
+}
+
+tr:hover {
+  background-color: var(--accent);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#blogger-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+#blogger-image:hover {
+  transform: scale(1.1);
+}
+
+.cardHolderFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: var(--Text);
+  width: 100% !important;
+  padding: 16px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 0px #493f2b;
 }
