@@ -1,163 +1,182 @@
 :root {
-    --background : #493F2B;
-    --accent : #F4B400;
-    --Text : #FFFFFF;
-    --image-width : 9vw;
-    --image-height : 9vw;
-    --span-text-color : whitesmoke;
-    --logo-and-blogger-gap : 30px;
+  --background: #493f2b;
+  --accent: #f4b400;
+  --Text: #ffffff;
+  --image-width: 9vw;
+  --image-height: 9vw;
+  --span-text-color: whitesmoke;
+  --logo-and-blogger-gap: 30px;
 
-    /* fonts*/
-    --header-font : 3rem;
-    --description-font : 1.5rem;
+  /* fonts*/
+  --header-font: 3rem;
+  --description-font: 1.5rem;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.blog-image,#blogger-image{
-    width: var(--image-width);
-    height: var(--image-height);
-    border-radius: 50;
+.blog-image,
+#blogger-image {
+  width: var(--image-width);
+  height: var(--image-height);
+  border-radius: 50;
 }
 
-#blogger-image{
-    transition: transform 0.3s ease-in-out;
+#blogger-image {
+  transition: transform 0.3s ease-in-out;
+  width: 3vw;
+  height: 3vw;
 }
 
-#blogger-image:hover{
-    transform: scale(1.1);
+#blogger-image:hover {
+  transform: scale(1.1);
 }
 
-body{
-    gap: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+body {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
 }
 
-#logout{
-    padding: 0.5rem 1rem;
-    min-width: 70px;
-    min-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1 rem;
-    background-color: var(--accent);
-    border-radius: 8px;
-    border-color: var(--accent);
-    margin-top: auto;
-    margin-bottom: auto;
-    color: var(--Text);
-    cursor: pointer;
+#logout {
+  padding: 0.5rem 1rem;
+  min-width: 70px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1 rem;
+  background-color: var(--accent);
+  border-radius: 8px;
+  border-color: var(--accent);
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--Text);
+  cursor: pointer;
 }
 
-h3,h1{
-    color: var(--Text);
+h3,
+h1 {
+  color: var(--Text);
 }
 
-#nav-container{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.nav-item {
+  background-color: var(--accent);
+  padding: 16px;
+  border-radius: 8px;
 }
 
-.nav-item{
-    background-color: var(--accent);
-    padding: 16px;
-    border-radius: 8px;
+h3 {
+  font-size: 1.5rem;
 }
 
-h3{
-    font-size: 2rem;
+span {
+  font-style: italic;
+  color: var(--span-text-color);
 }
 
-span{
-    font-style: italic;
-    color: var(--span-text-color);
+p {
+  color: var(--Text);
 }
 
-p{
-    color: var(--Text);
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-container p {
+  color: black;
+  font-size: 1.3rem;
 }
 
 .challenge-content {
-    font-size: 1.18rem;
+  font-size: 1.18rem;
 }
 
-#logo-and-blogger-section-subsection-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--logo-and-blogger-gap);
+#logo-and-blogger-section-subsection-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--logo-and-blogger-gap);
 }
 
-#logo-and-blogger-section-subsection-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--logo-and-blogger-gap);
+#logo-and-blogger-section-subsection-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--logo-and-blogger-gap);
 }
 
-#logo-and-blogger-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: var(--logo-and-blogger-gap);
+#logo-and-blogger-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--logo-and-blogger-gap);
 }
 
-#top{
-    display: flex;
-    justify-content: space-between;
+#top {
+  display: flex;
+  justify-content: space-between;
 }
 
-.challenge{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+.challenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.cardHolder{
-    display: flex;
-    width: 100% !important; 
-    padding: 16px;
-    background-color: var(--background);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px 0px #493F2B;
+.cardHolder {
+  display: flex;
+  width: 100% !important;
+  padding: 16px;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 0px #493f2b;
+  gap: 40px;
 }
 
-#challenges-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-}
-
-main{
+h3{
     width: 100%;
+    text-align: start;
+}
+
+#challenges-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: start;
+}
+
+main {
+  width: 100%;
 }
